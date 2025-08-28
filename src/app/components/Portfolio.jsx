@@ -17,16 +17,16 @@ const projects = [
     imageUrl: "/goviral.PNG",
     liveUrl: "http://www.goviralsol.com/",
     githubUrl: "https://github.com/GebrekidanM/goViral",
-    tags: ["React", "Tailwind CSS", "Freelance"],
+    tags: ["React","MongoDB","Node.js","ReactPrime","CSS","Freelance"],
   },
   {
-    title: "Automated Timetable Generator",
+    title: "Apostolic Answers - A Digital Catechism Resource",
     description:
-      "An intelligent web application that automates the complex process of creating balanced, conflict-free school schedules.",
-    imageUrl: "/timetable-screenshot.png",
-    liveUrl: "#",
-    githubUrl: "https://github.com/GebrekidanM/timetable-generator",
-    tags: ["React", "Node.js", "Algorithm"],
+      "I combined my passion for teaching with my skills in technology to build a simple and intuitive web application. This platform allows users to explore core questions about their faith and find well-researched answers rooted in the Holy Bible and the writings of the early Church Fathers. This was a true passion project, driven by my desire to serve the community.",
+    imageUrl: "/church.PNG",
+    liveUrl: "",
+    githubUrl: "https://github.com/GebrekidanM/orthodoxChurch",
+    tags: ["React", "Node.js", "MongoDB","CSS","Algorithm"],
   },
 ];
 
