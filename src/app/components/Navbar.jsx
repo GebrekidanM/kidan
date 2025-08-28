@@ -8,10 +8,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md p-4 sticky top-0 z-50 ">
+    <nav className="bg-gradient-to-b from-blue-50 to-white p-4 sticky top-0 z-50 ">
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="text-2xl font-bold text-gray-800">
-          GebreKidan G.
+          GebreKidan M.
         </a>
         
         <div className="hidden md:flex space-x-6">
@@ -37,7 +37,7 @@ const Navbar = () => {
           <a href="#portfolio" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-gray-800">Portfolio</a>
           <a href="#contact" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-gray-800">Contact</a>
           <a href="#contact" onClick={() => setIsOpen(false)}>
-            <Button>Hire Me</Button>
+              <Button className='cursor-pointer bg-blue-500 text-white'>Hire Me</Button>
           </a>
         </div>
       )}
