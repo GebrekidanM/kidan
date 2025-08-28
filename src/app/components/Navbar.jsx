@@ -2,12 +2,13 @@
 
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md p-4 sticky top-0 z-50">
+    <nav className="bg-white shadow-md p-4 sticky top-0 z-50 ">
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="text-2xl font-bold text-gray-800">
           GebreKidan G.
@@ -20,7 +21,7 @@ const Navbar = () => {
         </div>
         
         <a href="#contact" className="hidden md:block">
-           <Button>Hire Me</Button>
+           <Button className='cursor-pointer bg-blue-500 text-white'>Hire Me</Button>
         </a>
 
         <div className="md:hidden">
