@@ -1,19 +1,18 @@
-"use client"; // Add this at the very top of the file
+"use client";
 
-import React, { useState } from 'react'; // 1. Import useState
-import { Menu, X } from 'lucide-react'; // 2. Import the "X" icon
+import React, { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // 3. Add state
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-white shadow-md p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="text-2xl font-bold text-gray-800">
-          Kidan G.
+          GebreKidan G.
         </a>
         
-        {/* Desktop Navigation Links */}
         <div className="hidden md:flex space-x-6">
           <a href="#about" className="text-gray-600 hover:text-gray-800">About</a>
           <a href="#portfolio" className="text-gray-600 hover:text-gray-800">Portfolio</a>
@@ -21,18 +20,16 @@ const Navbar = () => {
         </div>
         
         <a href="#contact" className="hidden md:block">
-           <Button>Hire Me</Button> {/* Use Shadcn Button */}
+           <Button>Hire Me</Button>
         </a>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-gray-800">
-            {isOpen ? <X /> : <Menu />} {/* 4. Change icon based on state */}
+            {isOpen ? <X /> : <Menu />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
       {isOpen && (
         <div className="md:hidden mt-4 flex flex-col items-center space-y-4">
           <a href="#about" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-gray-800">About</a>
